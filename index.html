@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1> Katik <span style="font-size:20px">Kalkulator Matematik</span> </h1>
+    <h2> Welcome to Katik </h2>
+    <div class="intro">
+        <p> Hai Sobat, Selamat datang di Katik :] </p>
+        <p> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar </p>
+    </div>
+
+    <div class="ButtonAtas">
+        <button id="KelilingButton">Keliling</button>
+        <button id="LuasButton">Luas</button>
+    </div>
+
+    <div class="MenuKeliling" id="MenuKeliling" style="display: none;">
+        <h2 class="TitlePersegi"> Keliling Persegi </h2>
+
+        <div class="TempatFoto">
+            <img src="square.png" alt="FotoPersegi" style="width: 200px; height: 200px" class="FotoPersegi">
+        </div>
+
+        <div class="KelilingText">
+            <p> Rumus keliling persegi yaitu: </p>
+            <p id="FormulaKel"> K = 4 x S </p>
+            <p> Di mana:</p>
+            <p> K = Keliling </p>
+            <p> S = Sisi </p>
+        </div>
+
+        <h2> Hitung Keliling </h2>
+
+    </div>
+
+    <div class="MenuLuas" id="MenuLuas" style="display: none;">
+        <h2 class="TitlePersegi"> Luas Persegi </h2>
+
+        <div class="TempatFoto">
+            <img src="square.png" alt="FotoPersegi" style="width: 200px; height: 200px" class="FotoPersegi">
+        </div>
+
+        <div class="LuasText">
+            <p> Rumus keliling persegi yaitu: </p>
+            <p id="FormulaLuas"> L = S x S </p>
+            <p> Di mana:</p>
+            <p> L = Luas </p>
+            <p> S = Sisi </p>
+        </div>
+
+        <h2> Hitung Luas </h2>
+
+    </div>
+
+    <div class="InputBar" style="display: none;">
+        <input type="text" id="NilaiSisi" placeholder="Nilai Sisi" style="width: 700px; height: 30px;">
+    </div>
+
+    <div id="JawabKel" style="display: none;">
+        <p> K = 4 x S </p>
+        <p> K = 4 x N </p>
+        <p> K = Jawab </p>
+    </div>
+
+    <div id="JawabLuas" style="display: none;">
+        <p> L = S x S </p>
+        <p> L = N x N </p>
+        <p> L = Jawab </p>
+    </div>
+
+    <div id="ResultContainer"></div>
+
+    <div class="ButtonBawah" style="display: none;">
+        <button id="HButton">Hitung</button>
+        <button id="RButton">Reset</button>
+    </div>
+
+    <script src="js/script.js">
+
+        function validateInput(input) 
+        {
+            var value = input.value;
+
+            if (!/^[1-9]\d*$/.test(value)) 
+            {
+                alert("Please enter a valid number greater than 0.");
+                input.value = "";
+            }
+        }
+
+        function showResults() 
+        {
+
+            console.log("HButton clicked"); // Add this line
+
+            let sisiN = document.getElementById("NilaiSisi").value;
+
+            if (lastButtonClicked === "keliling") 
+            {
+                let hasil = parseInt(sisiN) * 4
+
+                document.write('K= ' + hasil )
+            } 
+
+            else if (lastButtonClicked === "luas") 
+            {
+                let hasil = parseInt(sisiN) * parseInt(sisiN)
+
+                document.write('K= ' + hasil )
+            }
+        }  
+        
+        var lastButtonClicked;
+
+        document.addEventListener("DOMContentLoaded", function () 
+        {
+            var kelilingButton = document.getElementById("KelilingButton");
+            var luasButton = document.getElementById("LuasButton");
+            var hButton = document.getElementById("HButton");
+
+            kelilingButton.addEventListener("click", function () 
+            {
+                lastButtonClicked = "keliling";
+            });
+
+            luasButton.addEventListener("click", function () 
+            {
+                lastButtonClicked = "luas";
+            });
+
+            hButton.addEventListener("click", function () 
+            {
+                showResults();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
