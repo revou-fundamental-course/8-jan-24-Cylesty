@@ -1,0 +1,210 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 25px;
+    width: 800px;
+    background-color: rgb(54, 150, 210);
+    margin: 0 auto;
+    margin-bottom: 10px; 
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px; 
+}
+
+.intro
+{
+    text-align: center;
+}
+
+.TitlePersegi
+{
+   text-align: center;
+   color: white;
+   padding: 30px;
+   width: 700px;
+   background-color: rgb(52, 82, 139);
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+.KelilingText
+{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.LuasText
+{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+#FormulaKel
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+#FormulaLuas
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+#JawabKel
+{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+#JawabLuas
+{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.ButtonAtas
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.ButtonAtas button
+{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 700px;
+    border: none;
+    background-color: white;
+}
+
+.ButtonAtas button:hover
+{
+    color: white;
+    padding: 10px;
+    width: 760px;
+    background-color: rgb(164, 201, 244);
+}
+
+.ButtonAtas button:active
+{
+    color: white;
+    padding: 10px;
+    width: 760px;
+    background-color: rgb(52, 82, 139);
+}
+
+#HButton
+{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: rgb(52, 82, 139);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 700px;  /* Adjust the left margin to 350px */
+}
+
+#HButton:hover
+{
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: rgb(105, 133, 194);
+}
+
+#HButton:active
+{
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: rgb(26, 52, 97);
+}
+
+#RButton
+{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: rgb(231, 168, 86);
+    margin-left: 1000px;
+}
+
+#RButton:hover
+{
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(249, 205, 118);
+}
+
+#RButton:active
+{
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(240, 157, 69)
+}
+
+.InputBar 
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 760px
+}
+
+#NilaiSisi
+{
+    font-size: 16px;
+}
+
+.TempatFoto
+{
+    text-align: center;
+}
+
+.FotoPersegi
+{
+    display: inline-block;
+}
